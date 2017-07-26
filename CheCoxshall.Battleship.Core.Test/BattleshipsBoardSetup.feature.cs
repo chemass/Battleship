@@ -18,19 +18,19 @@ namespace CheCoxshall.Battleship.Core.Test
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class BattleshipsFeature
+    public partial class BattleshipsBoardSetupFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Battleships.feature"
+#line 1 "BattleshipsBoardSetup.feature"
 #line hidden
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Battleships", "\tMake sure the game board is correctly populated before starting a game", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Battleships Board Setup", "\tMake sure the game board is correctly populated before starting a game", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -45,9 +45,9 @@ namespace CheCoxshall.Battleship.Core.Test
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "Battleships")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Battleships Board Setup")))
             {
-                global::CheCoxshall.Battleship.Core.Test.BattleshipsFeature.FeatureSetup(null);
+                global::CheCoxshall.Battleship.Core.Test.BattleshipsBoardSetupFeature.FeatureSetup(null);
             }
         }
         
@@ -69,7 +69,7 @@ namespace CheCoxshall.Battleship.Core.Test
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ensure Readiness")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships Board Setup")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("boardSetup")]
         public virtual void EnsureReadiness()
         {
@@ -95,7 +95,7 @@ this.ScenarioSetup(scenarioInfo);
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ensure I cannot start a game without placing all of my ships")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships Board Setup")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("boardSetup")]
         public virtual void EnsureICannotStartAGameWithoutPlacingAllOfMyShips()
         {
@@ -118,76 +118,14 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("EnsureTheDestructionOfADestroyer")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("gameplay")]
-        public virtual void EnsureTheDestructionOfADestroyer()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("EnsureTheDestructionOfADestroyer", new string[] {
-                        "gameplay"});
-#line 22
-this.ScenarioSetup(scenarioInfo);
-#line 23
- testRunner.Given("I have placed an aircraftcarrier horizontally at cell A1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 24
- testRunner.And("I have placed a battleship vertically at cell A2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 25
- testRunner.And("I have placed a cruiser vertically at cell B2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
- testRunner.And("I have placed a destroyer vertically at cell C2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 27
- testRunner.When("A shot lands at cell C2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 28
- testRunner.And("A shot lands at cell C3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 29
- testRunner.Then("My destroyer should be sunk", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("EnsureTheDestructionOfACarrier")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("gameplay")]
-        public virtual void EnsureTheDestructionOfACarrier()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("EnsureTheDestructionOfACarrier", new string[] {
-                        "gameplay"});
-#line 32
-this.ScenarioSetup(scenarioInfo);
-#line 33
- testRunner.Given("I have placed an aircraftcarrier horizontally at cell A1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 34
- testRunner.And("I have placed a battleship vertically at cell A2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 35
- testRunner.And("I have placed a cruiser vertically at cell B2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 36
- testRunner.And("I have placed a destroyer vertically at cell C2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 37
- testRunner.When("A shot lands at cell A1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 38
- testRunner.And("A shot lands at cell B1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 39
- testRunner.And("A shot lands at cell C1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 40
- testRunner.And("A shot lands at cell D1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 41
- testRunner.And("A shot lands at cell E1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 42
- testRunner.Then("My aircraftcarrier should be sunk", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ensure game board does not allow overlapping ships")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships Board Setup")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("gameBoard")]
         public virtual void EnsureGameBoardDoesNotAllowOverlappingShips()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ensure game board does not allow overlapping ships", new string[] {
                         "gameBoard"});
-#line 45
+#line 22
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -201,22 +139,10 @@ this.ScenarioSetup(scenarioInfo);
             table1.AddRow(new string[] {
                         "battleship",
                         "vertically",
-                        "A2"});
-            table1.AddRow(new string[] {
-                        "cruiser",
-                        "horizontally",
-                        "C4"});
-            table1.AddRow(new string[] {
-                        "submarine",
-                        "vertically",
-                        "B3"});
-            table1.AddRow(new string[] {
-                        "destroyer",
-                        "horizontally",
-                        "I9"});
-#line 46
+                        "B1"});
+#line 23
  testRunner.Given("I have placed the following ships", ((string)(null)), table1, "Given ");
-#line 53
+#line 27
  testRunner.Then("the game board should have thrown a CannotPlaceException with the message \'Ships " +
                     "may not overlap.\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -225,17 +151,17 @@ this.ScenarioSetup(scenarioInfo);
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ensure game board does not allow ships to fall off the edge of the world")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships Board Setup")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("gameBoard")]
         public virtual void EnsureGameBoardDoesNotAllowShipsToFallOffTheEdgeOfTheWorld()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ensure game board does not allow ships to fall off the edge of the world", new string[] {
                         "gameBoard"});
-#line 56
+#line 30
 this.ScenarioSetup(scenarioInfo);
-#line 57
+#line 31
  testRunner.Given("I have placed an aircraftcarrier horizontally at cell G1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 58
+#line 32
  testRunner.Then("the game board should have thrown a CannotPlaceException with the message \'Ship e" +
                     "xtends beyond board boundaries.\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -244,13 +170,13 @@ this.ScenarioSetup(scenarioInfo);
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Ensure game board does not allow duplicate ships")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Battleships Board Setup")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("gameBoard")]
         public virtual void EnsureGameBoardDoesNotAllowDuplicateShips()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ensure game board does not allow duplicate ships", new string[] {
                         "gameBoard"});
-#line 61
+#line 35
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -265,9 +191,9 @@ this.ScenarioSetup(scenarioInfo);
                         "aircraftcarrier",
                         "vertically",
                         "B1"});
-#line 62
+#line 36
  testRunner.Given("I have placed the following ships", ((string)(null)), table2, "Given ");
-#line 66
+#line 40
  testRunner.Then("the game board should have thrown a CannotPlaceException with the message \'This t" +
                     "ype of ship has already been placed.\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

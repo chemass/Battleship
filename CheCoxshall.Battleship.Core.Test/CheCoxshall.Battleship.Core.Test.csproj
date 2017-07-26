@@ -54,11 +54,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Battleships.feature.cs">
+    <Compile Include="BattleshipsBoardSetup.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Battleships.feature</DependentUpon>
+      <DependentUpon>BattleshipsBoardSetup.feature</DependentUpon>
     </Compile>
+    <Compile Include="BattleshipsGameplay.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BattleshipsGameplay.feature</DependentUpon>
+    </Compile>
+    <Compile Include="BattleshipsGameplaySteps.cs" />
     <Compile Include="BattleshipsSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameBoardTests.cs" />
@@ -66,9 +72,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Battleships.feature">
+    <None Include="BattleshipsBoardSetup.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Battleships.feature.cs</LastGenOutput>
+      <LastGenOutput>BattleshipsBoardSetup.feature.cs</LastGenOutput>
+    </None>
+    <None Include="BattleshipsGameplay.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BattleshipsGameplay.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

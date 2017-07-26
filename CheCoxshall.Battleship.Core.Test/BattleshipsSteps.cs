@@ -86,7 +86,7 @@ namespace CheCoxshall.Battleship.Core.Test
     public class ShipPlacement
     {
         public ShipType ShipType { get; set; }
-        public bool IsHorizontal { get { return Orientation == "horizontal"; } }
+        public bool IsHorizontal { get { return Orientation == "horizontally"; } }
         public string Orientation { get; set; }
         public Cell Cell { get; set; }
     }
